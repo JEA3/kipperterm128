@@ -2867,7 +2867,7 @@ petscii_to_ascii:
 init_screen_msg:
 .byte 10,10,10
 .byte "KipperTerm 128",13
-.byte "(c) 2015 Sean Peck",13
+.byte "(c) 2019 Sean Peck",13
 .byte 0
 
 
