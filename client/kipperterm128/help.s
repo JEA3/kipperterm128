@@ -33,7 +33,7 @@ help:
 .byte 13
 .byte 13,"  c= p - print buffer"
 .byte 13,"  c= s - screen print"
-.byte 13,"  c= c - clearn buffer"
+.byte 13,"  c= c - clear buffer"
 .byte 13,"  c= b - toggle buffer"
 .byte 13,"  c= v - view  buffer"	
 .byte 13,"  c= e - toggle echo"
