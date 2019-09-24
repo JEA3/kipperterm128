@@ -54,11 +54,11 @@ beep:
   ;tone values for voice 1
   lda #48
   sta $d400
-  lda #28
+  lda #31
   sta $d401
 
   ;enable tone register
-  lda #65
+  lda #23
   sta $d404
 
 
@@ -72,10 +72,10 @@ beep:
   bne :-
 
   ;disable tone register
-  lda #65
-  sta $d404
   lda #0
-  sta $d418	;set volume
+  sta $d404
+;  lda #0
+;  sta $d418	;set volume
 
   rts
 
