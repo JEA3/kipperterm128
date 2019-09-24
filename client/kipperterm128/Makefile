@@ -38,7 +38,7 @@ kt2wiz.prg: kipperterm128.o $(IP65WIZNETLIB) $(C64WIZNETLIB) $(INCFILES) ../cfg/
 
 
 kipperterm128.d64: kipperterm128.prg addresses.txt manual.txt abe.bas readme.bas
-	c1541  -format kipperterm2,k2 d64 $@ -attach $@ -write kipperterm128.prg -write "addresses.txt" "addresses.txt,s" -write "manual.txt" "manual.txt,s" -write abe -write readme
+	c1541  -format kipperterm128,k2 d64 $@ -attach $@ -write kipperterm128.prg -write "addresses.txt" "addresses.txt,s" -write "manual.txt" "manual.txt,s" -write abe -write readme
 	cp kipperterm128.d64 ../../server/boot
 
 kt2wiz.d64: kt2wiz.prg addresses.txt abe.bas
