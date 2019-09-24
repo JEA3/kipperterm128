@@ -16,6 +16,8 @@ Some of the code was literally stolen from old code I wrote as a teenager, so do
 
 HOW TO BUILD
 
+You will need Ruby on your machine.
+
 You will need MAKE on your machine, (on my machine it was installed in the C:\contiki\gnuwin32\bin.. but your machien will be different and as mentioned above c1541 if you wish to create d64 containing the files.
 
 You should just need to (after setting init.cmd properly and running it) 
