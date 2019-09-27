@@ -219,11 +219,13 @@ vt100_init_terminal:
 	   ldax #ibm_to_petscii
 	   stax temp_ptr_b
 	   jsr $ff62 			; reset char set to petscii
+	   jsr beep			; init bell
 	   jmp @cont1
 :	
 	   ldax #ascii_to_petscii
 	   stax temp_ptr_b
 	   jsr initialise_font		 ;init font
+	   jsr beep			 ;init bell
   
 @cont1:
 	;;   jsr initialise_font		 ;init font
