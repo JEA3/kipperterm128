@@ -24,7 +24,7 @@ telnet_main_entry:
   
   ldax #remote_host
   jsr print_ascii_as_native
-  ldy #40 ;max chars
+  ldy #80 ;max chars
   ldax #filter_dns
   jsr get_filtered_input
   bcc @host_entered
