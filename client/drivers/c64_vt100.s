@@ -661,7 +661,8 @@ long_escape_mode:
 	
   sta $f3     ; reverse off  0= all attributes off
 
-  lda $f1 			; set attributes (except for upper/lower case)
+  lda $00			; fix ANSI escape code 0 ignore issue
+  ; lda $f1 			; set attributes (except for upper/lower case)
 				;; all off 
   and #$0f 			; turn off upper bits
   eor #charmode_vanilla	
